@@ -1,42 +1,16 @@
 // strings1.rs
 // Make me compile without changing the function signature! Scroll down for hints :)
 
+use std::string::ToString;
+
 fn main() {
     let answer = current_favorite_color();
     println!("My current favorite color is {}", answer);
 }
 
 fn current_favorite_color() -> String {
-    "blue"
+    "blue".to_string()
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // The `current_favorite_color` function is currently returning a string slice with the `'static`
 // lifetime. We know this because the data of the string lives in our code itself -- it doesn't
